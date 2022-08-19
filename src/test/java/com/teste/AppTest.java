@@ -1,7 +1,6 @@
 package com.teste;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import java.util.*;
@@ -16,6 +15,9 @@ public class AppTest
     com.development.Processamento p = new Processamento();
     
     
+    // teste tarefa numero 8
+
+
   @Test
   public void opcao2(){
     assertEquals(2, p.verificaLugar(8, 10, 30));
@@ -40,7 +42,7 @@ public class AppTest
   @Test
   public void acessaAll(){
     Random r = new Random();
-    for(int i = 0; i < 10; i++){
+    for(int i = 0; i < 20; i++){
         int id = r.nextInt(800);
         int assento = r.nextInt(20);
         int fileira = r.nextInt(60);
@@ -49,5 +51,6 @@ public class AppTest
         }
     }
   }
+
 
 }
