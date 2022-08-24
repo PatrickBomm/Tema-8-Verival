@@ -26,14 +26,14 @@ public class TesteRanking {
     // teste tarefa numero 9
 
     @Test
-    public void testAdd() {
+    public void testAddWithAHighScore() {
         com.development.Record rec = new Record("A", 50);
 
         assertEquals(true, ranking.add(rec));
     }
 
     @Test
-    public void testAdd2() {
+    public void testAddWithALowScore() {
         com.development.Record rec = new Record("A", 10);
         ranking.add(rec);
         assertEquals(false, ranking.add(rec));

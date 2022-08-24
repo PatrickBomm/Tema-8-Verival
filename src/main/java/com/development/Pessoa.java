@@ -37,7 +37,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" + "id Pessoa=" + id + ", Ticket= F" + fileira + "A" + fileira + '}';
+        return "Pessoa{" + "id Pessoa=" + id + ", Ticket= F" + fileira + "A" + assento + '}';
     }
 
 }

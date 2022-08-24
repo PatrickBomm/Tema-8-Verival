@@ -2,7 +2,7 @@ package com.development;
 
 import java.util.*;
 
-public class Processamento {
+public class GerenciaLugares {
 
     ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
 
@@ -12,10 +12,10 @@ public class Processamento {
             return 0;
         }
 
-        if (id <= 100 && id > 0 && fileira > 10) {
+        if (id <= 100 && id > 0 && fileira > 20 || fileira < 0) {
             return 2;
         }
-        if (id >= 101 && id <= 200 && fileira < 40 && fileira > 60) {
+        if (id >= 101 && id <= 200 && fileira < 40 || fileira > 60) {
             return 2;
         } 
         
